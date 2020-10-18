@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="Layout.css" rel="Stylesheet" type="text/css">
+</head>
+<body>
+
+  <div class="header">
+    <h2>Quotes of the Day</h2>
+    <h1 id="quoteDisplay"></h1>
+  </div>
+    <script src="javascriptq.js"></script> 
+<ul>
+  <li><a href="index.html" target="_self">Home</a></li>
+  <li><a href="event_page.html" target="_self">Event</a></li>
+  <li><a href="about_page.html" target="_self">About Us</a></li>
+  <li><a href="contact_page.html" target="_self">Contact Us</a></li>
+  <li><a href="registration_page.html" target="_self">Registration</a></li>
+</ul>
+
+
+
+<div class="borderf">
+<h1>Form Pedaftaran UKM Sejarah</h1>
+  <form action="registration_page.html">
+  <div class="row">
+    <div class="col1">
+      <label for="fname">First Name</label>
+    </div>
+    <div class="col2">
+      <input type="text" id="fname" name="firstname" placeholder="Masukan Nama...">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col1">
+      <label for="nim">NIM</label>
+    </div>
+    <div class="col2">
+      <input type="text" id="nim" name="nim" placeholder="Masukan NIM...">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col1">
+      <label for="tlp">No.Telepon</label>
+    </div>
+    <div class="col2">
+      <input type="text" id="tlp" name="tlp" placeholder="Nomor Telepon...">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col1">
+      <label for="line">ID Line</label>
+    </div>
+    <div class="col2">
+      <input type="text" id="line" name="line" placeholder="Masukan ID Line...">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col1">
+      <label for="pg">Program Studi</label>
+    </div>
+    <div class="col2">
+      <input type="text" id="pg" name="pg" placeholder="Program Studi...">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col1">
+      <label for="Gender">Gender</label>
+    </div>
+    <div class="col2">
+      <select id="gender" name="gender">
+        <option value="Laki-laki">Laki-laki</option>
+        <option value="Perempuan">Perempuan</option>
+      </select>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col1">
+      <label for="subject">Alasan</label>
+    </div>
+    <div class="col2">
+      <textarea id="subject" name="subject" placeholder="Tuliskan Alasan bergabung..." style="height:200px"></textarea>
+    </div>
+  </div>
+  <div class="row">
+    <input type="submit" value="Submit" onclick="myFunction()">
+  </div>
+  </form>
+</div>
+
+<script>
+    function myFunction() {
+      alert("Success, Form anda telah dikirim!");
+    }
+</script>
+
+<div class="footer">
+    <address>
+      Written by Marcelino.<br> 
+      Visit us at:<br>
+      <a href="https://www.machung.ac.id/">Universitas Machung</a><br>
+      No.Telepon: 082131xxxx<br>
+      <a href="marcelino@example.com">email: marcelino@example.com</a>
+    </address>
+  </div>
+  
+</body>
+</html>

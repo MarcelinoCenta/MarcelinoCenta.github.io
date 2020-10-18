@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="Layout.css" rel="Stylesheet" type="text/css">
+  <style>#more {display: none;}
+  #more2 {display: none;}
+  #more3 {display: none;}
+  #more4 {display: none;}</style>
+</head>
+<body>
+
+  <div class="header">
+    <h2>Quotes of the Day</h2>
+    <h1 id="quoteDisplay"></h1>
+  </div>
+    <script src="javascriptq.js"></script> 
+<ul>
+  <li><a href="index.html" target="_self">Home</a></li>
+  <li><a href="event_page.html" target="_self">Event</a></li>
+  <li><a href="about_page.html" target="_self">About Us</a></li>
+  <li><a href="contact_page.html" target="_self">Contact Us</a></li>
+  <li><a href="registration_page.html" target="_self">Registration</a></li>
+</ul>
+
+<div class="border2">
+  <div class="galleryL">
+    <img src="Background/act1.png" alt="Deskripsi" width= 250px height= 200px> </div>
+  <h3>Study Tour bersama UKM Sejarah!</h3>
+  <p>
+    UKM Sejarah Ma Chung kali ini akan mengadakan study tour ke Yogyakarta, ditemani bersama dengan dosen pembimbing<br>
+    Kegiatan ini akan dilaksanakan pada <span id="dots">...</span><span id="more"> tanggal 11 November bersamaan dengan peringatan hari Pahlawan.<br>
+    Tujuan dari kegiatan ini adalah untuk mengenalkan budaya dan sejarah yang ada di Indonesia terutama di jogja yang pekat <br>
+    dengan sejarah masa lalu di Indonesia. Kegiatan UKM ini akan ditutup apabila seluruh kuota sudah terpenuhi!<br>
+    Hanya dengan Rp. 500.000,00 kamu bisa menginap di jogja selama 3 hari 2 malam dan sekaligus berwisata!
+  </span></p>
+  <button onclick="readMore()" id="myBtn">Read more</button>
+</div>
+
+<div class="border2">
+  <div class="galleryL">
+    <img src="Background/act2.png" alt="Deskripsi" width= 250px height= 200px> </div>
+  <h3>Seminar Online Sejarah Indonesia</h3>
+  <p>
+    Sebagai warga yang tinggal di daerah indonesia sudah seharusnya bagi kita untuk mengenal lebih dalam tentang sejarahnya. Oleh karena itu,</br>
+    diadakanlah seminar untuk membahas sejarah di Indonesia <span id="dots2">...</span><span id="more2">dengan segala legenda-legendanya.<br>
+    Kegiatan ini akan dilaksanakan pada tanggal 30 Oktober yang akan dinarasumberi oleh dosen pembimbing kita.<br>
+    Kegiatan ini tidak memungut biaya sama sekali sehingga kalian bisa datang kapan pun dan jangan lupa untuk mengikuti absensi<br>
+    agar bisa digunakan untuk menklaim poin!
+  </span></p>
+  <button onclick="readMore2()" id="myBtn2">Read more</button>
+</div>
+
+<div class="border2">
+  <div class="galleryL">
+    <img src="Background/act3.png" alt="Deskripsi" width= 250px height= 200px> </div>
+  <h3>Forum Terbuka bersama Dosen dan Mahasiswa</h3>
+  <p>
+    UKM Sejarah Ma Chung tidak melulu hanya soal pembahasan mengenai sejarah yang ada di dunia, maka dari itu dibukalah sebuah forum terbuka
+    yang berguna untuk menyimpan aspirasi-aspirasi dari mahasiswa yang <span id="dots3">...</span><span id="more3"> akan sangat berguna nantinya
+    apabila kita ingin melaksanakan kegiatan kedepannya! Kegiatan Forum terbuku ini berguna pula agar mahasiswa tidak bosan dengan materi yang diajarkan
+    mengingat sejarah adalah salah satu materi yang bisa menangkan hati sehingga tanpa sadar tertidur. Semoga dengan adanya forum terbuka ini
+    maka mahasiswa tidak bosan dengan acara yang diadakan oleh UKM sejarah Universitas Ma Chung.
+  </span></p>
+  <button onclick="readMore3()" id="myBtn3">Read more</button>
+</div>
+
+<div class="border2">
+  <div class="galleryL">
+    <img src="Background/act4.png" alt="Deskripsi" width= 250px height= 200px> </div>
+  <h3>Bermain Game sambil Belajar!</h3>
+  <p>
+    UKM Sejarah Ma Chung juga menyediakan sebuah event yang menggunakan sebuah game PC dalam kegiatannya. Game pada dasarnya selalu dianggap
+    suatu hal yang membuat orang malas dan tidak produktif sehingga <span id="dots4">...</span><span id="more4">pada saat ini game dianggap
+    hal yang buruk. Namun pada kenyataanya game adalah salah satu sarana bagi kita untuk belajar juga, melalui bermain game kita tidak hanya
+    bersenang-senang melainkan juga memberikan pengetahuan yang tanpa kita sadari dapatkan. Berikut adalah rekomendasi game-game yang membahas
+    soal sejarah! Hearth of Irons IV, Stronghold Crusader, Age of Empire, Europa Universalis, Civilization, Assassins Creed, dan Total War Saga.
+  </span></p>
+  <button onclick="readMore4()" id="myBtn4">Read more</button> 
+</div>
+
+<script>
+function readMore() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+function readMore2() {
+  var dots2 = document.getElementById("dots2");
+  var moreText2 = document.getElementById("more2");
+  var btnText2 = document.getElementById("myBtn2");
+
+  if (dots2.style.display === "none") {
+    dots2.style.display = "inline";
+    btnText2.innerHTML = "Read more"; 
+    moreText2.style.display = "none";
+  } else {
+    dots2.style.display = "none";
+    btnText2.innerHTML = "Read less"; 
+    moreText2.style.display = "inline";
+  }
+}
+function readMore3() {
+  var dots3 = document.getElementById("dots3");
+  var moreText3 = document.getElementById("more3");
+  var btnText3 = document.getElementById("myBtn3");
+
+  if (dots3.style.display === "none") {
+    dots3.style.display = "inline";
+    btnText3.innerHTML = "Read more"; 
+    moreText3.style.display = "none";
+  } else {
+    dots3.style.display = "none";
+    btnText3.innerHTML = "Read less"; 
+    moreText3.style.display = "inline";
+  }
+}
+function readMore4() {
+  var dots4 = document.getElementById("dots4");
+  var moreText4 = document.getElementById("more4");
+  var btnText4 = document.getElementById("myBtn4");
+
+  if (dots4.style.display === "none") {
+    dots4.style.display = "inline";
+    btnText4.innerHTML = "Read more"; 
+    moreText4.style.display = "none";
+  } else {
+    dots4.style.display = "none";
+    btnText4.innerHTML = "Read less"; 
+    moreText4.style.display = "inline";
+  }
+}
+</script>
+
+<div class="footer">
+  <address>
+    Written by Marcelino.<br> 
+    Visit us at:<br>
+    <a href="https://www.machung.ac.id/">Universitas Machung</a><br>
+    No.Telepon: 082131xxxx<br>
+    <a href="marcelino@example.com">email: marcelino@example.com</a>
+  </address>
+</div>
+  
+</body>
+</html>
